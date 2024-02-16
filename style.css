@@ -1,0 +1,380 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "General Sans";
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+.circle {
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.7s;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  z-index: 99999;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.bounding {
+  width: fit-content;
+  overflow: hidden;
+}
+
+.bounding .boundingelem {
+  transform: translateY(100%);
+}
+.main {
+  width: 100%;
+  background-color: black;
+}
+.page1 {
+  position: relative;
+  color: white;
+  height: 100vh;
+  width: 100%;
+  background-color: black;
+}
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px 40px;
+  color: white;
+}
+.nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+}
+.heading {
+  margin-top: 60px;
+}
+.heading h1 {
+  margin-left: 30px;
+  opacity: 0.6;
+  line-height: 1;
+  font-size: 10vw;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+.heading #secondh1 {
+  margin-left: 230px;
+}
+
+.blocktext {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  width: fit-content;
+}
+
+.blocktext h5 {
+  text-transform: uppercase;
+  font-size: 15px;
+  text-align: right;
+}
+
+.chotiheadings {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  margin-top: 100px;
+  padding-right: 50px;
+}
+.chotiheadings h5 {
+  text-transform: uppercase;
+  margin-top: 0.5vw;
+  font-size: 1vw;
+  text-align: right;
+}
+
+.page1-footer {
+  width: 100%;
+  position: absolute;
+  padding: 0 2vw;
+  bottom: 3%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.page1-footer a {
+  color: white;
+  text-transform: uppercase;
+  font-family: "General Sans";
+  text-decoration: none;
+}
+.page1-footer .iconset {
+  display: flex;
+  gap: 10px;
+}
+
+.page1-footer .circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: #888;
+}
+
+.page2 {
+  color: white;
+  padding-right: 10vw;
+  padding-left: 2vw;
+  padding-top: 140px;
+  height: 100vh;
+  width: 100%;
+  background-color: black;
+}
+.page2 h4 {
+  font-size: 15px;
+  padding: 10px 30px;
+  text-transform: uppercase;
+  font-family: "General Sans";
+}
+.page2 h3 {
+  font-family: "General Sans";
+  font-size: 18px;
+  font-weight: 400;
+}
+#yoyo {
+  margin-left: 320px;
+  margin-right: 90px;
+}
+#yo {
+  margin-left: 130px;
+  margin-right: 90px;
+}
+#yoyoyo {
+  margin-left: 220px;
+  margin-right: 90px;
+}
+
+.elem {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 3.5vw 3vw;
+  padding-right: 0;
+  border-top: 1px solid #888;
+}
+.elem a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 4vw;
+  opacity: 0.6;
+  font-weight: 600;
+}
+.elemlast {
+  border-bottom: 1px solid #888;
+}
+.elem img {
+  opacity: 0;
+  pointer-events: none;
+  height: 140%;
+  z-index: 999;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+.about {
+  color: white;
+  width: 100%;
+  background-color: black;
+  padding: 10vw 5vw;
+  padding-left: 40vw;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.textabout {
+  width: 30rem;
+}
+.textabout h5 {
+  text-transform: uppercase;
+  opacity: 0.6;
+  margin-bottom: 10px;
+}
+.textabout p {
+  line-height: 1.6;
+  margin-bottom: 30px;
+  font-size: 18px;
+  font-family: "General Sans";
+}
+.textabout a {
+  text-transform: uppercase;
+  padding: 12px 22px;
+  border: 1px solid white;
+  color: white;
+  border-radius: 100px;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.huihui {
+  display: flex;
+  gap: 10px;
+  text-transform: uppercase;
+  opacity: 0.5;
+  font-size: 12px;
+}
+
+.about img {
+  width: 240px;
+}
+
+.final {
+  color: white;
+  padding: 20px 30px;
+  padding-bottom: 7vw;
+  background-color: black;
+}
+.final h5 {
+  text-transform: uppercase;
+  opacity: 0.6;
+}
+.final a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-top: 10px;
+}
+.footer {
+  color: white;
+  background-color: black;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  padding: 40px 30px;
+}
+.footerleft {
+  display: flex;
+  gap: 20px;
+  font-size: 12px;
+}
+.footerright {
+  display: flex;
+  gap: 30px;
+}
+.footer a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+@media (max-width: 600px) {
+  .main {
+    height: 100vh;
+    width: 220vw;
+  }
+  .heading h1 {
+    font-size: 24vw;
+    margin-left: 80px;
+  }
+  .page1 {
+    position: relative;
+    color: white;
+    height: 90vh;
+    width: 100%;
+    background-color: black;
+  }
+  .chotiheadings h5 {
+    text-transform: uppercase;
+    margin-top: 0.5vw;
+    font-size: 5vw;
+    text-align: right;
+  }
+  .page1-footer {
+    width: 100%;
+    position: absolute;
+    padding: 0 2vw;
+    bottom: 3%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 5vw;
+  }
+  .page1-footer .iconset {
+    display: none;
+  }
+  .page2 {
+    height: 180vh;
+  }
+  .elem img {
+    display: none;
+  }
+  .page2 h4 {
+    font-size: 8vw;
+  }
+  .elem a {
+    font-size: 10vw;
+  }
+  .elem {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .elem h3 {
+    font-size: 8vw;
+  }
+  #yoyo {
+    padding: 40px 40px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  #yo {
+    padding: 40px 40px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  #yoyoyo {
+    padding: 40px 40px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .elem h5 {
+    font-size: 20px;
+  }
+  .about {
+    padding-left: 0;
+    height: 130vh;
+    display: flex;
+    flex-direction: column;
+  }
+  .about img {
+    width: 100vw;
+  }
+  .textabout {
+    width: 200vw;
+  }
+  .textabout h5 {
+    font-size: 10vw;
+    margin-left: 270px;
+    margin-top: 70px;
+  }
+  .textabout p {
+    font-size: 7vw;
+    padding: 20px 20px;
+  }
+  .textabout .huihui {
+    margin-left: 20px;
+    font-size: 5vw;
+  }
+  .final {
+    font-size: 5vw;
+  }
+  .final a {
+    font-size: 5vw;
+  }
+}
